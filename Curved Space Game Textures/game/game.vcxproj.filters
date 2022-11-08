@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\game.cpp" />
+    <ClCompile Include="src\player.cpp" />
+    <ClCompile Include="src\event_layer.cpp">
+      <Filter>testing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GPU_layer.cpp">
+      <Filter>testing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\text_layer.cpp">
+      <Filter>testing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tester_layer.cpp">
+      <Filter>testing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GPU_lines_layer.cpp">
+      <Filter>testing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\asteroids\asteroids.cpp">
+      <Filter>asteroids</Filter>
+    </ClCompile>
+    <ClCompile Include="src\asteroids\asteroids_layer.cpp">
+      <Filter>asteroids</Filter>
+    </ClCompile>
+    <ClCompile Include="src\asteroids\bullets.cpp">
+      <Filter>asteroids</Filter>
+    </ClCompile>
+    <ClCompile Include="src\asteroids\menu_layer.cpp">
+      <Filter>asteroids</Filter>
+    </ClCompile>
+    <ClCompile Include="src\asteroids\spaceship.cpp">
+      <Filter>asteroids</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game_world.cpp">
+      <Filter>testing</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\player.h" />
+    <ClInclude Include="src\event_layer.h">
+      <Filter>testing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GPU_layer.h">
+      <Filter>testing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\text_layer.h">
+      <Filter>testing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tester_layer.h">
+      <Filter>testing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GPU_lines_layer.h">
+      <Filter>testing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\asteroids\asteroids.h">
+      <Filter>asteroids</Filter>
+    </ClInclude>
+    <ClInclude Include="src\asteroids\asteroids_layer.h">
+      <Filter>asteroids</Filter>
+    </ClInclude>
+    <ClInclude Include="src\asteroids\bullets.h">
+      <Filter>asteroids</Filter>
+    </ClInclude>
+    <ClInclude Include="src\asteroids\menu_layer.h">
+      <Filter>asteroids</Filter>
+    </ClInclude>
+    <ClInclude Include="src\asteroids\spaceship.h">
+      <Filter>asteroids</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game_world.h">
+      <Filter>testing</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="asteroids">
+      <UniqueIdentifier>{140e2e0d-9b3b-46d8-8ef1-598342346c13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="testing">
+      <UniqueIdentifier>{81c48087-2d2e-4152-a191-17adfc9805cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
