@@ -17,13 +17,6 @@ void asteroids_layer::on_update(const engine::timestep& time_step)
 	{
 		frame_timer += (float)time_step;
 
-		pause_timer += (float)time_step;
-		if (pause_timer > 1.f)
-		{
-			pause_timer = 0.f;
-			m_game_world->set_game_state(game_world::game_state::paused);
-		}
-
 		m_game_world->update_timer((float)time_step);
 
 		// update the spaceship
@@ -39,8 +32,8 @@ void asteroids_layer::on_update(const engine::timestep& time_step)
 
 		if(m_game_world->get_spaceship()->check_collision(m_game_world->get_asteroids()->objects()) || m_game_world->get_asteroids()->objects().size() == 0)
 		{
-			//m_game_world->get_spaceship()->object()->set_velocity(engine::polar_vector2(0.f, 0.f));
-			//m_game_world->set_game_state(game_world::game_state::stopped);
+			m_game_world->get_spaceship()->object()->set_velocity(engine::polar_vector2(0.f, 0.f));
+			m_game_world->set_game_state(game_world::game_state::stopped);
 		}
 	}
 } 

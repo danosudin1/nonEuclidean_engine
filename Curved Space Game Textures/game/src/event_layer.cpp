@@ -143,7 +143,7 @@ if (GetKeyState(VK_UP) & 0x80 || GetKeyState('W') & 0x80)
 			m_game_world->set_K(m_game_world->get_K() - 0.01f);
 
 		if (e.key_code() == engine::key_codes::KEY_ENTER && m_game_world->get_game_state() == game_world::game_state::start && m_game_world->start_timer() <= 0.f)
-			m_game_world->set_game_state(game_world::game_state::paused);
+			m_game_world->set_game_state(game_world::game_state::running);
 
 		if (e.key_code() == engine::key_codes::KEY_BACKSPACE && m_game_world->get_game_state() == game_world::game_state::stopped)
 			m_game_world->switch_re_run();
